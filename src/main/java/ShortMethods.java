@@ -1,7 +1,7 @@
 public class ShortMethods {
 
     public static void main(String[] args) {
-        System.out.println(ShortMethods.isMultiple(25,5));
+        System.out.println(ShortMethods.isOdd(25));
     }
 
     private static boolean isMultiple(long n, long m) {
@@ -13,4 +13,14 @@ public class ShortMethods {
         }
        return answer;
     }
+    private static boolean isOdd(int i) {
+        boolean answer = false;
+
+        for (int j = 1; j <= i; i++)
+            answer = !answer;
+
+        return answer;
+    }
+
+
 }
