@@ -13,5 +13,13 @@ public class Circle {
         colour = "red";
     }
 
+    public double getRadius() {
+        return radius;
+    }
+
+    public double getArea() {
+        double rSquare = radius*radius;
+        return rSquare*Math.PI;
+    }
 
 }
