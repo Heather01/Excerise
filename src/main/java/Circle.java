@@ -8,5 +8,10 @@ public class Circle {
         colour = "red";
     }
 
+    public Circle(double r) {
+        radius = r;
+        colour = "red";
+    }
+
 
 }
