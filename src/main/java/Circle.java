@@ -21,5 +21,20 @@ public class Circle {
         double rSquare = radius*radius;
         return rSquare*Math.PI;
     }
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(double number) {
+        if(number<10) {
+            colour = "red";
+        }
+        else if(number>=10 && number<50) {
+            colour = "amber";
+        }
+        else {
+            colour = "green";
+        }
+    }
 
 }
