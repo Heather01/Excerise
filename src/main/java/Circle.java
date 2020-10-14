@@ -13,6 +13,11 @@ public class Circle {
         colour = "red";
     }
 
+    public Circle(double r, double colourNumber) {
+        radius = r;
+        setColour(colourNumber);
+    }
+
     public double getRadius() {
         return radius;
     }

@@ -8,8 +8,13 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
         double inputRadius = input.nextDouble();
+        double inputDoubleColour = input.nextDouble();
 
-        Circle circle3 = new Circle(inputRadius);
+//        Circle circle3 = new Circle(inputRadius);
+        Circle circle4 = new Circle(inputRadius,inputDoubleColour);
+
+        System.out.println( circle4.getColour());
+
 
 
     }
