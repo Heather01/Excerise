@@ -1,39 +1,47 @@
 package Circle;
 
-public class Circle {
+public class Circle extends Shape{
 
-    private String colour;
     private double radius;
 
     public Circle() {
+        super();
         radius = 1.0;
-        colour = "red";
     }
 
     public Circle(double r) {
+        super();
         radius = r;
-        colour = "red";
     }
 
-    public Circle(double r, String colour) {
+    public Circle(double r, String colour, Boolean filled) {
+        super(colour, filled);
         radius = r;
-        setColour(colour);
     }
 
     public double getRadius() {
         return radius;
     }
 
-    public double getArea() {
-        double rSquare = radius*radius;
-        return rSquare*Math.PI;
-    }
-    public String getColour() {
-        return colour;
+    public void setRadius(double radius) {
+        this.radius=radius;
     }
 
-    public void setColour(String colour) {
-        this.colour = colour;
+    @Override
+    public double getArea() {
+        return radius*radius*Math.PI;
     }
+
+    @Override
+    public double getPerimeter() {
+        return 2*Math.PI*radius;
+    }
+
+    @Override
+    public String toString() {
+        return "This is a circle with a radius of "+ radius+ " that has the area of " + getArea()+ " and the perimeter of "+
+                getPerimeter();
+    }
+
 
 }
