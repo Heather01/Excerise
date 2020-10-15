@@ -26,6 +26,8 @@ public class Main {
         Circle circle5 = new Circle();
         System.out.println(circle5.toString());
 
+        Rectangle rectangle = new Rectangle();
+        System.out.println(rectangle.toString());
 
 
     }
