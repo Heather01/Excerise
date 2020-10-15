@@ -37,7 +37,7 @@ public class TaskTest {
         int[] array2 = {4,5,7,2};
         assertEquals(true, task.swap(array1, array2));
     }
-
+    
     @Test
     public void testSwapFalse() {
         int[] array1 = {1,2,3,4};
