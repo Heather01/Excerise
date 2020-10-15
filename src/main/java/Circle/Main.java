@@ -2,6 +2,7 @@ package Circle;
 
 //import java.util.Scanner;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -22,13 +23,36 @@ public class Main {
 //        double inputDoubleColour = input.nextDouble();
 //        Circle circle4 = new Circle(inputRadius2,inputDoubleColour);
 //        System.out.println("This is the fist instance of the circle's radius " + circle4.getRadius() + " and colour " + circle4.getColour());
+//
+//        Circle circle5 = new Circle();
+//        System.out.println(circle5.toString());
+//
+//        Rectangle rectangle = new Rectangle();
+//        System.out.println(rectangle.toString());
 
-        Circle circle5 = new Circle();
-        System.out.println(circle5.toString());
+        System.out.println("Using Polymorphism");
 
-        Rectangle rectangle = new Rectangle();
-        System.out.println(rectangle.toString());
+        Shape circle = new Circle();
+        circle.toString();
 
+        Shape rectangle = new Rectangle();
+        rectangle.toString();
+
+        Shape square = new Square();
+        square.toString();
+
+
+
+        System.out.println("Using the subclasses");
+
+        Circle circle2 = new Circle();
+        circle2.toString();
+
+        Rectangle rectangle2 = new Rectangle();
+        rectangle2.toString();
+
+        Square square2 = new Square();
+        square2.toString();
 
     }
 }
